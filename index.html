@@ -1,174 +1,373 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>العد التنازلي لشهر رمضان المبارك 2026</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            background: linear-gradient(to bottom, #ffcc70, #ff9472);
-            color: #fff;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 100vh;
-            animation: backgroundFade 10s infinite alternate;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>نهاد كمال — أخصائية تربية خاصة وتعديل سلوك</title>
+<meta name="description" content="أخصائية تربية خاصة وتعديل سلوك بخبرة أكثر من 10 سنوات في تأهيل أطفال التوحد وفرط الحركة وتشتت الانتباه ADHD وصعوبات التعلم باستخدام أسلوب ABA، مع استشارات أونلاين.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sage-deep:#1f4e6b;
+  --sage:#3a7ca5;
+  --sage-soft:#8fbcd4;
+  --cream:#f4f7fa;
+  --sand:#dfe9f0;
+  --clay:#e0a458;
+  --ink:#1e2f3a;
+  --white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Tajawal',sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  line-height:1.85;
+  overflow-x:hidden;
+}
+h1,h2,h3{font-family:'Cairo',sans-serif;line-height:1.4}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
 
-        @keyframes backgroundFade {
-            0% {
-                background: linear-gradient(to bottom, #ffcc70, #ff9472);
-            }
-            50% {
-                background: linear-gradient(to bottom, #ff9472, #f2709c);
-            }
-            100% {
-                background: linear-gradient(to bottom, #f2709c, #ffcc70);
-            }
-        }
+/* ===== Header ===== */
+.topbar{
+  position:sticky;top:0;z-index:50;
+  background:rgba(246,243,236,.9);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--sand);
+}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:'Cairo';font-weight:900;font-size:1.25rem;color:var(--sage-deep);display:flex;align-items:center;gap:10px}
+.logo .mark{width:34px;height:34px;background:var(--sage-deep);border-radius:12px 12px 12px 4px;display:flex;align-items:center;justify-content:center;color:var(--clay);font-weight:900}
+.nav-links{display:flex;gap:28px;font-weight:500;font-size:.98rem}
+.nav-links a{color:var(--sage-deep);opacity:.75;transition:opacity .2s}
+.nav-links a:hover{opacity:1}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--sage-deep);color:var(--white);
+  padding:12px 24px;border-radius:100px;font-weight:700;
+  font-family:'Cairo';font-size:.95rem;
+  transition:transform .18s, box-shadow .18s;
+  box-shadow:0 4px 14px rgba(47,93,84,.22);
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(47,93,84,.3)}
+.btn.clay{background:var(--clay);box-shadow:0 4px 14px rgba(224,164,88,.3);color:var(--ink)}
+.btn.clay:hover{box-shadow:0 8px 22px rgba(224,164,88,.4)}
+@media(max-width:720px){.nav-links{display:none}}
 
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
+/* ===== Hero ===== */
+.hero{position:relative;padding:80px 0 90px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.eyebrow{
+  display:inline-block;background:var(--sand);color:var(--sage-deep);
+  padding:7px 16px;border-radius:100px;font-weight:700;font-size:.85rem;
+  font-family:'Cairo';margin-bottom:22px;
+}
+.hero h1{font-size:3rem;font-weight:900;color:var(--sage-deep);margin-bottom:20px}
+.hero h1 .hl{color:var(--clay)}
+.hero p.lead{font-size:1.2rem;max-width:520px;margin-bottom:32px;color:#33505f}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-stats{display:flex;gap:34px;margin-top:44px}
+.stat .n{font-family:'Cairo';font-weight:900;font-size:2rem;color:var(--sage);line-height:1}
+.stat .l{font-size:.9rem;color:#5a7280;margin-top:4px}
 
-        .timer {
-            font-size: 2rem;
-            background: rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            border-radius: 15px;
-            display: inline-block;
-            margin: 20px auto;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
+.portrait{
+  position:relative;aspect-ratio:4/5;border-radius:28px;
+  background:linear-gradient(160deg,var(--sage) 0%,var(--sage-deep) 100%);
+  overflow:hidden;box-shadow:0 24px 60px rgba(31,78,107,.28);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:20px;padding:40px 28px;
+}
+.portrait .badge{
+  position:absolute;bottom:22px;right:22px;background:var(--white);
+  border-radius:100px;padding:9px 18px;font-family:'Cairo';font-weight:700;
+  font-size:.82rem;color:var(--sage-deep);box-shadow:0 8px 20px rgba(0,0,0,.16);
+  display:flex;align-items:center;gap:7px;z-index:3;
+}
+.portrait .badge::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--clay)}
+.portrait .avatar-ring{
+  width:150px;height:150px;border-radius:50%;
+  background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+.portrait .p-name{font-family:'Cairo';font-weight:900;font-size:1.5rem;color:var(--white);text-align:center;line-height:1.5}
+.portrait .p-role{font-family:'Tajawal';font-weight:500;font-size:.95rem;color:rgba(255,255,255,.82);text-align:center;margin-top:-8px}
+.portrait .swash{position:absolute;top:-50px;left:-50px;width:200px;height:200px;background:var(--clay);opacity:.16;border-radius:50%}
+@media(max-width:820px){
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .hero h1{font-size:2.3rem}
+  .portrait{max-width:340px;margin:0 auto}
+}
 
-        .footer {
-            margin-top: 30px;
-            font-size: 1.2rem;
-            background: rgba(0, 0, 0, 0.2);
-            padding: 15px;
-            border-radius: 10px;
-            display: inline-block;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            animation: pulse 2s infinite;
-        }
+/* ===== Sections ===== */
+section.pad{padding:76px 0}
+.sec-head{text-align:center;max-width:640px;margin:0 auto 48px}
+.sec-head .kick{color:var(--clay);font-family:'Cairo';font-weight:700;letter-spacing:1px;font-size:.9rem}
+.sec-head h2{font-size:2.1rem;color:var(--sage-deep);margin-top:8px}
+.sec-head p{color:#5a7280;margin-top:12px}
 
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-                opacity: 1;
-            }
-            50% {
-                transform: scale(1.1);
-                opacity: 0.8;
-            }
-            100% {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
+.about{background:var(--white)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about-grid p{font-size:1.1rem;margin-bottom:18px;color:#33505f}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.tag{background:var(--cream);border:1px solid var(--sand);padding:8px 16px;border-radius:100px;font-weight:500;font-size:.92rem;color:var(--sage-deep)}
+@media(max-width:820px){.about-grid{grid-template-columns:1fr;gap:28px}}
 
-        .message {
-            font-size: 1.5rem;
-            margin-top: 20px;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            animation: slideIn 1s ease-out;
-        }
+/* Services */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{
+  background:var(--white);border-radius:22px;padding:30px 26px;
+  border:1px solid var(--sand);transition:transform .2s, box-shadow .2s;
+}
+.card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(47,93,84,.12)}
+.card .ico{width:52px;height:52px;border-radius:16px;background:var(--sand);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:18px}
+.card h3{font-size:1.2rem;color:var(--sage-deep);margin-bottom:10px}
+.card p{color:#5a7280;font-size:.98rem}
+@media(max-width:820px){.cards{grid-template-columns:1fr}}
 
-        @keyframes slideIn {
-            0% {
-                transform: translateY(50px);
-                opacity: 0;
-            }
-            100% {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
+/* Audience split */
+.audience{background:var(--sage-deep);color:var(--white)}
+.audience .sec-head h2{color:var(--white)}
+.audience .sec-head .kick{color:var(--clay)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.panel{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:22px;padding:34px 30px}
+.panel h3{font-size:1.4rem;color:var(--clay);margin-bottom:14px}
+.panel ul{list-style:none}
+.panel li{padding:8px 0 8px 0;padding-right:28px;position:relative;color:rgba(255,255,255,.9)}
+.panel li::before{content:"◂";position:absolute;right:0;color:var(--sage-soft)}
+@media(max-width:820px){.split{grid-template-columns:1fr}}
 
-        .signature {
-            margin-top: 40px;
-            font-size: 1rem;
-            color: #fff;
-            opacity: 0.8;
-            font-style: italic;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-        }
+/* Experience timeline */
+.timeline{max-width:760px;margin:0 auto;position:relative}
+.timeline::before{content:"";position:absolute;right:14px;top:8px;bottom:8px;width:2px;background:var(--sand)}
+.tl-item{position:relative;padding:0 46px 34px 0}
+.tl-item::before{content:"";position:absolute;right:8px;top:6px;width:15px;height:15px;border-radius:50%;background:var(--clay);border:3px solid var(--cream)}
+.tl-item .yr{font-family:'Cairo';font-weight:700;color:var(--clay);font-size:.92rem}
+.tl-item h3{font-size:1.2rem;color:var(--sage-deep);margin:4px 0}
+.tl-item .place{color:#5a7280;font-size:.98rem}
 
-        @media (max-width: 768px) {
-            body {
-                height: auto;
-                padding: 20px;
-            }
+/* Credentials */
+.creds{background:var(--white)}
+.cred-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:820px;margin:0 auto}
+.cred{display:flex;gap:16px;align-items:flex-start;background:var(--cream);border-radius:18px;padding:22px 24px;border:1px solid var(--sand)}
+.cred .yr{font-family:'Cairo';font-weight:900;color:var(--sage-soft);font-size:1.1rem;flex-shrink:0}
+.cred h3{font-size:1.05rem;color:var(--sage-deep)}
+.cred p{color:#5a7280;font-size:.92rem}
+@media(max-width:600px){.cred-grid{grid-template-columns:1fr}}
 
-            h1 {
-                font-size: 2.5rem;
-            }
+/* Contact */
+.contact{background:linear-gradient(160deg,var(--sage) 0%,var(--sage-deep) 100%);color:var(--white);text-align:center}
+.contact h2{font-size:2.2rem;margin-bottom:14px}
+.contact p{max-width:520px;margin:0 auto 32px;color:rgba(255,255,255,.9);font-size:1.1rem}
+.contact-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.btn.wa{background:#25D366;color:#fff;font-size:1.05rem;padding:16px 32px;box-shadow:0 6px 20px rgba(37,211,102,.35)}
+.btn.ghost{background:transparent;border:2px solid rgba(255,255,255,.5);color:#fff}
+.contact-info{margin-top:34px;display:flex;gap:30px;justify-content:center;flex-wrap:wrap;font-size:.98rem;color:rgba(255,255,255,.85)}
 
-            .timer {
-                font-size: 1.8rem;
-                padding: 15px;
-            }
+footer{background:var(--ink);color:rgba(255,255,255,.6);text-align:center;padding:28px 0;font-size:.9rem}
 
-            .footer {
-                font-size: 1rem;
-                padding: 10px;
-            }
-
-            .message {
-                font-size: 1.2rem;
-                padding: 10px;
-            }
-
-            .signature {
-                font-size: 0.9rem;
-            }
-        }
-    </style>
+/* reveal */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease, transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.btn:hover,.card:hover{transform:none}}
+</style>
 </head>
 <body>
-    <h1>العد التنازلي لرمضان 2026</h1>
-    <div class="timer" id="countdown">يتم الحساب...</div>
-    <div class="message">🎉 تهنئكم شركة المحتوى بقدوم شهر رمضان المبارك، ونتمنى لكم دوام الصحة والعافية 🌙✨</div>
-    <div class="footer">شركة المحتوى تتمنى لكم رمضانًا مباركًا مليئًا بالخير والبركات</div>
-    <div class="signature">M.eHaB</div>
 
-    <script>
-        // تاريخ بداية رمضان لعام 2026 (تقريبًا: 18 فبراير 2026)
-        const ramadanStart = new Date("February 18, 2026 00:00:00").getTime();
+<header class="topbar">
+  <div class="wrap">
+    <div class="logo"><span class="mark">ن</span> نهاد كمال</div>
+    <nav class="nav-links">
+      <a href="#about">نبذة</a>
+      <a href="#services">الخدمات</a>
+      <a href="#audience">لمن أقدّم خدماتي</a>
+      <a href="#experience">الخبرة</a>
+    </nav>
+    <a href="#contact" class="btn">احجزي جلسة تقييم</a>
+  </div>
+</header>
 
-        // تحديث العد التنازلي كل ثانية
-        const timer = setInterval(() => {
-            const now = new Date().getTime();
-            const timeLeft = ramadanStart - now;
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal in">
+      <span class="eyebrow">أخصائية تربية خاصة · توحد وتعديل سلوك · ADHD</span>
+      <h1>نساعد طفلك على النمو <span class="hl">خطوة بخطوة</span></h1>
+      <p class="lead">أخصائية تربية خاصة وتعديل سلوك بخبرة أكثر من ١٠ سنوات في تأهيل أطفال التوحد وفرط الحركة وتشتت الانتباه (ADHD) وصعوبات التعلم، بأسلوب علمي قائم على استراتيجيات ABA وخطة فردية لكل طفل — حضورياً أو أونلاين.</p>
+      <div class="hero-cta">
+        <a href="https://wa.me/201026305664?text=مرحباً%20نهاد،%20أرغب%20في%20حجز%20جلسة%20تقييم" class="btn wa" target="_blank" rel="noopener">تواصلي معي عبر واتساب</a>
+        <a href="#services" class="btn clay">تعرّفي على الخدمات</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="n">+١٠</div><div class="l">سنوات خبرة</div></div>
+        <div class="stat"><div class="n" style="font-size:1.5rem">توحد + ADHD</div><div class="l">مجالات التخصص</div></div>
+        <div class="stat"><div class="n">أونلاين</div><div class="l">وحضورياً</div></div>
+      </div>
+    </div>
+    <div class="portrait reveal in">
+      <div class="swash"></div>
+      <div class="avatar-ring">
+        <svg width="82" height="82" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 21c-.4 0-.79-.14-1.1-.42C6.14 16.36 3 13.53 3 9.75 3 7.13 5.02 5 7.5 5c1.4 0 2.74.65 3.6 1.68L12 7.7l.9-1.02C13.76 5.65 15.1 5 16.5 5 18.98 5 21 7.13 21 9.75c0 3.78-3.14 6.61-7.9 10.83-.31.28-.7.42-1.1.42z" fill="rgba(255,255,255,.95)"/>
+          <circle cx="12" cy="10.6" r="2.1" fill="var(--sage-deep)"/>
+          <path d="M12 12.6c-1.7 0-3 .95-3.4 2.4h6.8C15 13.55 13.7 12.6 12 12.6z" fill="var(--sage-deep)"/>
+        </svg>
+      </div>
+      <div class="p-name">نهاد كمال</div>
+      <div class="p-role">أخصائية تربية خاصة وتعديل سلوك</div>
+      <div class="badge">تقييم أولي مجاني</div>
+    </div>
+  </div>
+</section>
 
-            // حساب الأيام والساعات والدقائق والثواني
-            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+<!-- ABOUT -->
+<section class="pad about" id="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <span class="kick" style="color:var(--clay);font-family:'Cairo';font-weight:700">من أنا</span>
+      <h2 style="font-family:'Cairo';font-size:2rem;color:var(--sage-deep);margin:8px 0 20px">رحلة عشر سنوات في تنمية قدرات الأطفال</h2>
+      <p>أؤمن أن كل طفل يستحق فرصة حقيقية للنمو ذهنياً وسلوكياً واجتماعياً. أعمل مع الأسر والمدارس على تصميم خطة فردية لكل طفل، تبدأ بتقييم دقيق لقدراته وتنتهي بمهارات يمارسها في حياته اليومية.</p>
+      <p>خبرتي بين المراكز المتخصصة ومدارس التربية الفكرية منحتني القدرة على قياس السلوك وفهم وظيفته وبناء تدخل مناسب يعزّز السلوك الإيجابي ويقلّل السلبي.</p>
+    </div>
+    <div class="reveal">
+      <div class="tags">
+        <span class="tag">إدارة الصف</span>
+        <span class="tag">تعديل السلوك</span>
+        <span class="tag">استراتيجيات ABA</span>
+        <span class="tag">حل المشكلات</span>
+        <span class="tag">التواصل مع الأسرة</span>
+        <span class="tag">المرونة والتكيّف</span>
+        <span class="tag">إدارة الجلسات</span>
+        <span class="tag">التحفيز الذاتي</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-            // تحويل الأرقام إلى العربية
-            const arabicNumbers = (num) => num.toString().replace(/\d/g, (d) => '٠١٢٣٤٥٦٧٨٩'[d]);
+<!-- SERVICES -->
+<section class="pad" id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kick">الخدمات</span>
+      <h2>خدمات مبنية على خطة فردية لكل طفل</h2>
+      <p>من التقييم الأول حتى اكتساب المهارة ومتابعتها.</p>
+    </div>
+    <div class="cards">
+      <div class="card reveal"><div class="ico">📋</div><h3>تقييم القدرات</h3><p>قياس قدرات الطفل الحالية وإعداد خطة تعليمية وعلاجية واضحة الأهداف.</p></div>
+      <div class="card reveal"><div class="ico">🎯</div><h3>تعديل السلوك</h3><p>قياس السلوك وتحديد وظيفته وبناء تدخلات سلوكية مناسبة بأسلوب ABA.</p></div>
+      <div class="card reveal"><div class="ico">🌱</div><h3>تعزيز السلوك الإيجابي</h3><p>زيادة السلوكيات الإيجابية والحفاظ عليها، وتقليل السلوكيات السلبية تدريجياً.</p></div>
+      <div class="card reveal"><div class="ico">🧩</div><h3>مهارات التوحد وصعوبات التعلم</h3><p>برامج تأهيلية مصممة لأطفال طيف التوحد وصعوبات التعلم حسب احتياج كل طفل.</p></div>
+      <div class="card reveal"><div class="ico">⚡</div><h3>فرط الحركة وتشتت الانتباه ADHD</h3><p>خطط لتنمية التركيز وضبط الاندفاع وتنظيم السلوك لأطفال ADHD داخل الصف والمنزل.</p></div>
+      <div class="card reveal"><div class="ico">📚</div><h3>تكييف المواد التعليمية</h3><p>إعادة تصميم المواد والأنشطة لتناسب مستوى الطفل وطريقة استيعابه.</p></div>
+      <div class="card reveal"><div class="ico">💻</div><h3>استشارات أونلاين</h3><p>جلسات وتقييم واستشارات عن بُعد للأسر داخل مصر وخارجها بنفس جودة المتابعة.</p></div>
+      <div class="card reveal"><div class="ico">🤝</div><h3>إرشاد الأسرة</h3><p>تدريب الأهل على متابعة الخطة في المنزل لضمان استمرار التقدم.</p></div>
+    </div>
+  </div>
+</section>
 
-            // عرض النتيجة
-            document.getElementById("countdown").innerHTML =
-                `${arabicNumbers(days)} يوم - ${arabicNumbers(hours)} ساعة - ${arabicNumbers(minutes)} دقيقة - ${arabicNumbers(seconds)} ثانية`;
+<!-- AUDIENCE SPLIT -->
+<section class="pad audience" id="audience">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kick">لمن أقدّم خدماتي</span>
+      <h2>شريكة للأسرة وللمؤسسة التعليمية</h2>
+    </div>
+    <div class="split">
+      <div class="panel reveal">
+        <h3>لأولياء الأمور</h3>
+        <ul>
+          <li>جلسات تقييم وتأهيل فردية لطفلك</li>
+          <li>خطة واضحة بأهداف قابلة للقياس</li>
+          <li>متابعة دورية وتقارير عن التقدّم</li>
+          <li>تدريب الأسرة على التعامل الصحيح في المنزل</li>
+        </ul>
+      </div>
+      <div class="panel reveal">
+        <h3>للمدارس والمراكز</h3>
+        <ul>
+          <li>أخصائية تربية خاصة بخبرة ميدانية طويلة</li>
+          <li>بناء وتنفيذ برامج تعديل السلوك للطلاب</li>
+          <li>إعداد وتكييف المناهج والمواد التعليمية</li>
+          <li>متابعة سجلات الطلاب وتقييم الأداء</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-            // إنهاء العد عند وصول رمضان
-            if (timeLeft < 0) {
-                clearInterval(timer);
-                document.getElementById("countdown").innerHTML = "رمضان مبارك!";
-            }
-        }, 1000);
-    </script>
+<!-- EXPERIENCE -->
+<section class="pad" id="experience">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kick">الخبرة العملية</span>
+      <h2>مسيرة مهنية موثوقة</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="yr">٢٠١٩ — ٢٠٢٣</div>
+        <h3>أخصائية تربية خاصة وتعديل سلوك</h3>
+        <div class="place">تقييم القدرات وبناء الخطط الفردية بأسلوب ABA</div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="yr">٢٠١٥ — ٢٠١٩</div>
+        <h3>معلمة ومصممة برامج تعليمية</h3>
+        <div class="place">إعداد المناهج وتكييف المواد وإدارة الصف</div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="yr">٢٠١٢ — ٢٠١٥</div>
+        <h3>أخصائية تربية خاصة</h3>
+        <div class="place">قياس السلوك وتصميم التدخلات السلوكية للطلاب</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIALS -->
+<section class="pad creds">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kick">المؤهلات وأسلوب التعلم</span>
+      <h2>خلفية أكاديمية وتدريبية</h2>
+    </div>
+    <div class="cred-grid">
+      <div class="cred reveal"><div class="yr">٢٠١٧</div><div><h3>دبلوم مهني</h3><p>جامعة طنطا</p></div></div>
+      <div class="cred reveal"><div class="yr">٢٠١٦</div><div><h3>دبلوم عام في التربية</h3><p>جامعة طنطا</p></div></div>
+      <div class="cred reveal"><div class="yr">٢٠١٠</div><div><h3>بكالوريوس — قسم الفلسفة</h3><p>جامعة طنطا</p></div></div>
+      <div class="cred reveal"><div class="yr">منهج</div><div><h3>أسلوب التعلم</h3><p>تعلّم فردي قائم على تحليل السلوك التطبيقي ABA وخطة مصممة لكل طفل حسب قدراته.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="pad contact" id="contact">
+  <div class="wrap">
+    <h2 class="reveal">جاهزة لأساعد طفلك على التقدّم</h2>
+    <p class="reveal">احجزي جلسة تقييم أولى — حضورياً أو أونلاين — أو تواصلي معي لمناقشة احتياج طفلك أو التعاون مع مدرستك.</p>
+    <div class="contact-btns reveal">
+      <a href="https://wa.me/201026305664?text=مرحباً%20نهاد،%20أرغب%20في%20حجز%20جلسة%20تقييم" class="btn wa" target="_blank" rel="noopener">تواصلي عبر واتساب</a>
+      <a href="mailto:nhadshndy@gmail.com" class="btn ghost">راسليني بالبريد</a>
+    </div>
+    <div class="contact-info reveal">
+      <span>📱 ٢٠١٠٢٦٣٠٥٦٦٤+</span>
+      <span>✉️ nhadshndy@gmail.com</span>
+      <span>💻 متاحة للاستشارات أونلاين</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © ٢٠٢٦ نهاد كمال — أخصائية تربية خاصة وتعديل سلوك
+</footer>
+
+<script>
+const io=new IntersectionObserver((es)=>{
+  es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+},{threshold:.14});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
 </body>
 </html>
